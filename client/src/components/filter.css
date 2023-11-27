@@ -1,0 +1,127 @@
+:root {
+  --bg: rgb(1, 74, 74);
+  --bg-accent: #19adad;
+  --text-color: #dadce1;
+  --nav-size: 60px;
+  --border: 1px solid #057c70;
+  --border-radius: 8px;
+  --speed: 500ms;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(1, 74, 74);
+}
+::-webkit-scrollbar-track:hover {
+  filter: brightness(1.5);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #19adad;
+  border-radius: 32px;
+  border: 22px none #ffffff;
+}
+.nav-item {
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-button {
+  --button-size: 30px;
+  width: var(--button-size);
+  height: var(--button-size);
+  background-color: var(--bg);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 300ms;
+}
+.icon-button:hover {
+  filter: brightness(1.5);
+}
+
+.dropdown {
+  position: absolute;
+  top: 280px;
+  width: 300px;
+  transform: translateX(45%);
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  overflow: hidden;
+  transition: height var(--speed) ease;
+  z-index: 100;
+  max-height: 300px;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu-item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  transition: background var(--speed);
+  padding: 0.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.menu-item .icon-button {
+  margin-right: 0.5rem;
+}
+
+.menu-item .icon-button:hover {
+  filter: none;
+}
+
+.menu-item:hover {
+  background-color: rgb(45, 117, 117);
+}
+
+.icon-right {
+  margin-left: auto;
+}
+
+
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-110%);
+}
+.menu-primary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.menu-primary-exit {
+  position: absolute;
+}
+.menu-primary-exit-active {
+  transform: translateX(-110%);
+  transition: all var(--speed) ease;
+}
+
+.menu-secondary-enter {
+  transform: translateX(110%);
+}
+.menu-secondary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.menu-secondary-enter-done {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.menu-secondary-exit {
+}
+.menu-secondary-exit-active {
+  transform: translateX(110%);
+  transition: all var(--speed) ease;
+}

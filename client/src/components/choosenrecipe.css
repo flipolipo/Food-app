@@ -1,0 +1,40 @@
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.lefttop {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.righttop {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.rightbottom {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+} */
+.buttonNameImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.healthInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.test {
+  border: 20px rgb(1, 127, 127);
+  border-color: rgb(1, 127, 127);
+  border-style: groove;
+}
+

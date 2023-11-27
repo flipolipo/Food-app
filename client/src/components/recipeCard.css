@@ -1,0 +1,53 @@
+.recipeCard {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  height: auto;
+  width: 70%;
+}
+
+.recipeInfo {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.recipeName {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recipeText {
+  margin-bottom: 10px;
+}
+
+.recipeUrl a {
+  color: #333;
+  text-decoration: none;
+}
+
+.recipeImage {
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+}
+
+.recipeButtons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.recipeButtons button {
+  margin-left: 10px;
+  border: none;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.recipeButtons button:hover {
+  background-color: #333;
+}
